@@ -1,0 +1,31 @@
+site_name: DSFZero
+theme:
+  name: kpn
+  extra:
+    repo_icon: 'github'
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Foundations:
+      - Math: foundations/math.md
+      - Python: foundations/python.md
+      - Data Wrangling: foundations/wrangling.md
+      - Visualization: foundations/viz.md
+  - Machine Learning:
+      - Supervised: machine-learning/supervised.md
+      - Unsupervised: machine-learning/unsupervised.md
+      - Evaluation: machine-learning/evaluation.md
+      - Feature Engineering: machine-learning/features.md
+  - Deep Learning:
+      - CNNs: deep-learning/cnn.md
+      - RNNs / LSTMs: deep-learning/rnn.md
+      - Transformers: deep-learning/transformers.md
+      - Optimization: deep-learning/optim.md
+  - SOTA Methods:
+      - Papers Explained: sota/papers.md
+      - Architectures: sota/archs.md
+      - Code / Notebooks: sota/notebooks.md
+  - Resources:
+      - Datasets: resources/datasets.md
+      - Tools / Libraries: resources/tools.md
