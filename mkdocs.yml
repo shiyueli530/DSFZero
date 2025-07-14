@@ -1,14 +1,48 @@
 site_name: DSFZero
 theme:
-  name: kpn
+  name: material
   extra:
     repo_icon: 'github'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js
+  - js/katex.js
+
 
 nav:
   - Home: index.md
   - About: about.md
   - Foundations:
-      - Math: foundations/math.md
+      - Math:
+          - Overview: foundations/math/index.md
+          - Linear Algebra: foundations/math/linear_algebra.md
+          - Statistics: foundations/math/statistics.md
+          - Calculus: foundations/math/calculus.md
+          - Distance: foundations/math/geometry.md
       - Python: foundations/python.md
       - Data Wrangling: foundations/wrangling.md
       - Visualization: foundations/viz.md

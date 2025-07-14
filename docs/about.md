@@ -1,3 +1,3 @@
 # About
 
-This site is built with MkDocs and the KPN theme.
+This site is built with MkDocs and the material theme.
